@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="clickedMe()">click me</button>
+    <button onmouseenter="focusedMe()">focused me</button>
+    <button onmouseout="goneOut()">gone out of me</button>
+    <button ondblclick="dbclick()">double click me</button>
+    
+    <script>
+        function clickedMe() {
+            console.log("cliked me")
+            alert("you just clicked me")
+        }
+        function focusedMe() {
+            console.log("you just focused me or enter me")
+        }
+        function goneOut() {
+            console.log("you just gone out from me")
+        }
+        function dbclick() {
+            alert("you double time clicked me")
+            console.log("you double time clicked me")
+        } 
+    </script>
+</body>
+</html>
